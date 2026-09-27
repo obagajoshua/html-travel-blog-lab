@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Ensures proper scaling on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obaga Joshua | Software Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts: a serif for headings, a sans-serif for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ HEADER ============
+       Contains name + GitHub link. Uses <header> since this is
+       introductory content for the whole page. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <p class="site-name">Obaga Joshua</p>
+
+      <!-- <nav> because this is a set of navigation links -->
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li>
+            <a href="https://github.com/obagajoshua" target="_blank" rel="noopener noreferrer" class="github-link">
+              GitHub Profile
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- <main> wraps the unique content of this page (not repeated header/footer) -->
+  <main>
+
+    <!-- ============ ABOUT ME SECTION ============ -->
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <div class="container">
+        <h1 id="about-heading">Hi, I'm Obaga Joshua.</h1>
+        <p class="bio">
+          I'm a front-end-leaning software developer who enjoys turning rough ideas
+          into clean, usable interfaces. I like small, well-tested projects, clear
+          documentation, and code that's easy for the next person (often future me)
+          to pick up.
+        </p>
+
+        <!-- Skills are a list of discrete items, so <ul> is the right tag -->
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript</li>
+          <li>Git &amp; GitHub</li>
+         </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section id="projects" class="section projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading">Projects</h2>
+
+        <!-- Each project is a self-contained piece of content, so <article> fits -->
+        <div class="project-grid project-grid--single">
+
+          <article class="project-card">
+            <h3>Calculator</h3>
+            <p>
+              A simple calculator built with JavaScript that handles basic
+              arithmetic operations through a clean, clickable interface.
+            </p>
+            <ul class="tech-tags">
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+...
+
+[Message clipped]  View entire message
+
+Metro Frost
+12:44 PM (0 minutes ago)
+to me
+
+            </ul>
+            <a href="https://github.com/janedoe/calculator" target="_blank" rel="noopener noreferrer">
+              View on GitHub
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Obaga Joshua. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="web.js"></script>
+</body>
+</html>
